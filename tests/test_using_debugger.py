@@ -1,13 +1,12 @@
-import pdb
 import unittest
 
 def silly_things(things):
     sillier_things = []
 
     for thing in things:
-        sillier_things.append("silly " + thing)
+        sillier_things.append("silly " + str(thing))
 
-    return sillier_things    
+    return sillier_things
 
 
 class TestUsingDebugger(unittest.TestCase):
@@ -19,6 +18,5 @@ class TestUsingDebugger(unittest.TestCase):
                 27,
                 "",
         ]
-        pdb.set_trace()
         sillier_things = silly_things(things)
         self.assertEqual(sillier_things[2], "silly duck")

@@ -15,6 +15,10 @@ def format_cardinal_number(n):
         return number_words[n]
 
     if n > 1000000:
-        return "{} million".format(n / 1000000)
+        millions = n / 1000000
+        if millions == int(millions):
+            millions = int(millions)
+        return "{} million".format(millions)
+
 
     return "{:,}".format(n)

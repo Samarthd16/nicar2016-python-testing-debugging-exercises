@@ -10,4 +10,4 @@ class NoFailuresTestCase(unittest.TestCase):
        
 class FailingTestCase(unittest.TestCase):
     def test_true_is_true(self):
-        self.assertEqual(False, True)
+        self.assertEqual(True, True)

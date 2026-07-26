@@ -1,0 +1,23 @@
+version = 1
+revision = 3
+requires-python = ">=3.12"
+
+[[package]]
+name = "nicar2016-python-testing-debugging-exercises"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "unicode" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "unicode", specifier = ">=2.9" }]
+
+[[package]]
+name = "unicode"
+version = "2.9"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a1/9d/ded8876eb5d8bed3e940943a984965b23e6158e10e1bdfd75d0a16ef2bec/unicode-2.9.tar.gz", hash = "sha256:42b6c3b953dce84a25bc9e5d11942c7d34b4d70d8e2d54b455c074770eb753b2", size = 18766, upload-time = "2022-06-03T14:47:39.71Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8f/52/07116342a6803c1d292ce66fa9ea481e39c92b692f0a75341254072b0366/unicode-2.9-py2.py3-none-any.whl", hash = "sha256:39d67799f4795823122192a1f8dd58d476bf8b80c863fb7d530ad990dd2ebc9a", size = 14267, upload-time = "2022-06-03T14:47:37.799Z" },
+]
